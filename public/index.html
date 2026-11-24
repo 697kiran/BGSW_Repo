@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trail Notes Lab</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header class="wrap masthead">
+      <a class="brand" href="/">Trail Notes</a>
+      <nav aria-label="Main navigation">
+        <a href="#trails">Browse trails</a>
+        <a href="#lab">Training lab</a>
+      </nav>
+    </header>
+    <main class="wrap">
+      <section class="hero" id="trails">
+        <h1>Find your next trail.</h1>
+        <ul class="trail-list">
+          <!-- trails -->
+        </ul>
+        <a href="/api/trails">View trail data as JSON</a>
+      </section>
+      <section id="lab" class="lab">
+        <h2>Supply-chain training lab</h2>
+        <p>Scan this repository with Guardian, then use the findings to answer these exercises.</p>
+        <details>
+          <summary>Identify a direct dependency <span class="severity">Low advisory</span></summary>
+          <p>Find which file declares <code>cookie</code> and which file records its exact version.</p>
+          <p>Expected finding <code>cookie@0.6.0</code> · <a href="https://github.com/advisories/GHSA-pxg6-pf52-xh8x">CVE-2024-47764</a></p>
+        </details>
+        <details>
+          <summary>Trace a transitive dependency <span class="severity">High advisory</span></summary>
+          <p>Find which direct dependency brings <code>semver</code> into the project.</p>
+          <p>Expected path <code>trail-notes → make-dir → semver</code> · <a href="https://github.com/advisories/GHSA-c2qf-rxjj-qqgw">CVE-2022-25883</a></p>
+        </details>
+        <details>
+          <summary>Compare severity with priority <span class="severity">Critical advisory</span></summary>
+          <p>Find where <code>minimist</code> is declared. Explain how its development scope affects Guardian’s priority.</p>
+          <p>Expected finding <code>minimist@1.2.5</code> · <a href="https://github.com/advisories/GHSA-xvch-5gv4-984h">CVE-2021-44906</a></p>
+        </details>
+      </section>
+    </main>
+  </body>
+</html>

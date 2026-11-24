@@ -1,0 +1,24 @@
+{
+  "name": "trail-notes",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A small hiking-trail app and supply-chain training lab.",
+  "scripts": {
+    "start": "node src/server.mjs",
+    "trails": "node src/cli.mjs",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "cookie": "0.6.0",
+    "make-dir": "3.1.0",
+    "minimist": "1.2.5"
+  },
+  "overrides": {
+    "make-dir": {
+      "semver": "6.3.0"
+    }
+  }
+}

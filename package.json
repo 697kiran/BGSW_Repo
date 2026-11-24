@@ -2,7 +2,7 @@
   "name": "trail-notes",
   "version": "1.0.0",
   "private": true,
-  "description": "A small hiking-trail app and supply-chain training lab.",
+  "description": "A small hiking-traill app and supply-chain training lab.",
   "scripts": {
     "start": "node src/server.mjs",
     "trails": "node src/cli.mjs",
